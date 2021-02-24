@@ -237,7 +237,8 @@ def pinyin_syllable_to_ipa(s):
         ipa_syllable = _PINYIN_MAP[pinyin_syllable.lower()]['IPA']
     except KeyError:
         raise ValueError('Not a valid syllable: %s' % s)
-    return ipa_syllable + _IPA_TONES[tone]
+    # return ipa_syllable + _IPA_TONES[tone]
+    return ipa_syllable
 
 
 def _zhuyin_syllable_to_numbered(s):
